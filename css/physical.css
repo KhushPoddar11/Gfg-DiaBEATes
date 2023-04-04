@@ -1,0 +1,428 @@
+html, body{
+  font: normal 100%/1.8 Signika,sans-serif; } 
+
+p{
+  font-size: 16px;
+}
+h6{
+  font-size:1.125rem; 
+}
+  
+h5{ font-size:1.266rem }
+
+h4{
+  font-size: 1.375rem 
+}
+
+h3{font-size: 1.424rem;}
+
+h2{font-size: 1.602rem;}
+
+h1{ font-size:1.802rem;}
+
+
+.btn{
+  font-size: 17px;
+}
+
+/* NAVIGATION BAR 
+-----------------------------*/
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+        display: block;
+    }
+/* LOGO 
+-------------------*/
+
+.navbar-brand img{
+  margin-top: -14px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+/* CUSTOMIZING THE CAROUSEL
+-------------------------------------------------- */
+
+
+/*carousel slider for physical page*/
+
+.size {
+  margin: 0 auto;
+  width: 450px; 
+  /* margin-bottom: 20px; */
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 0%);
+}
+
+.carousel-control.left {
+  left: 0;
+  right: auto;
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 0%);
+}
+
+.carousel-control {
+  
+  width: 25%;
+}
+/*breadcrumb */
+.breadcrumb {
+background: rgba(245, 245, 245, 0);
+border: 0px solid rgba(245, 245, 245, 1);
+border-radius: 25px;
+display: block;
+}
+
+.btn-bread{
+margin-top:50px;
+font-size: 12px
+}
+
+/* the line below text-header on about-diabetes page*/
+.page-header {
+  padding-bottom: 2px;
+  margin: 40px 0 50px;
+  border-bottom: 1px solid #eee;
+}
+
+.page-header-physical{
+  margin: 120px 0px 0px 400px;
+  color: #03060e;  font-family: 'Signika', sans-serif;
+}
+
+/* Text header styling*/
+.page-header h1{
+  color: #337ab7; 
+  margin-bottom: 20px;
+  
+}
+
+/*body-content with margin top spacing 40px*/
+.body-content-index{
+margin-top: 40px;
+}
+
+
+.body-content-about-diabetes{
+  margin-top:70px;
+}
+
+
+/*content typography styling for all body content pages*/
+
+
+/*body-content with margin top spacing 70px*/
+.body-content-about-diabetes{
+  margin-top:70px;
+}
+
+
+/*content typography styling for all body content pages*/
+
+
+.body-content-types{
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.statistics{
+  letter-spacing: 0.2px;
+  color: #213368;
+}
+
+/*h3 styling for all body content pages*/
+.body-content-types h3{
+  color: #337ab7;
+}
+
+.breadcrumb{
+  margin-top: 60px;
+}
+
+.breadcrumb > li + li:before {
+content:"\003E";
+}
+
+
+#about-diatension{
+  margin-bottom: 25px;
+  text-decoration: underline;
+  color: #337ab7;
+}
+
+#big-logo{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  
+}
+
+.donation{
+border: 4px solid #262626;
+font-weight: 400;
+margin-bottom: 30px;
+margin-top: 20px;
+text-align:center;
+}
+
+#donation-heading{
+font-weight: 400;
+letter-spacing:0.5px;
+line-height: 20px;
+margin-bottom: 20px;
+color: #337ab7;
+}
+
+.donation p{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.row-1{
+margin-bottom: 30px;
+}
+.btn-lg_body{
+letter-spacing:2px;
+}
+
+.about-diabetes-p{
+text-align: justify
+}
+
+/* thubmnail*/
+.thumbnail{
+border-top-color: #337ab7;
+border-top: 4px solid;
+}
+
+.caption h5{
+  color: #337ab7;
+}
+
+.row1{
+  margin-top: 30px;
+}
+
+ .img-responsive{
+  display: block;
+  max-width: 100%;
+  height: 250px;
+  
+}
+
+.img-header{
+  width: 700px;
+  height:300px;
+}
+
+.img-header-treatment{
+  width: 800px;
+  height: 400px;
+}
+
+hr {
+ 
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+
+}
+
+#related-content h6{
+  text-decoration: underline;
+}
+
+.embed-responsive-4by3 {  /* the embedded video padding bottom*/
+  padding-bottom: 35%;
+}
+
+/*FOOTER */
+i {
+font-size : 12px;
+color: #aece61;
+padding-right:10px;
+}
+
+.footer {
+position: relative;
+background-color: #213368;
+color: #7d7975;
+padding: 30px 0 30px;
+font-size:16px;
+}
+
+.footer p {
+line-height:26px;
+color : #fff;
+width: max-content;
+
+}
+.footer h5 {
+font-size: 22px;
+font-weight: 700;
+color: #aece61  ;
+position: relative;
+padding-bottom: 16px;
+}
+.footer h5:after {
+content: '';
+display: block;
+margin: 5px 0 0;
+width: 40%;
+height: 1px;
+/* background-color:  ; */
+}
+
+.footer ul {
+list-style: none;
+line-height:35px;
+margin: 0px 0px 0px -35px;
+color: #FFF;
+}
+
+.footer-headings{
+color: #D3D7D9;
+}
+/* .footer a {
+color:# ;
+
+} */
+.footer a:hover {
+color: #aece61 ;
+}
+
+.btn-lg_footer{
+margin-top: 15px;
+margin-left:40px;
+
+}
+
+/* stay connected - social media */
+
+.social:hover {
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+}
+.social {
+-webkit-transform: scale(0.8);
+/* Browser Variations: */
+
+-moz-transform: scale(0.8);
+-o-transform: scale(0.8);
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+}
+
+/*
+Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+color: #3B5998;
+}
+#social-tw:hover {
+color: #4099FF;
+}
+#social-gp:hover {
+color: #d34836;
+}
+#social-em:hover {
+color: #f39c12;
+}
+
+
+/* newsletter */
+
+/*body{
+font-family: 'Raleway', sans-serif;
+}
+*/
+.form-newsletter{
+margin-top: 18px;
+margin-left: -60px ;
+width: max-content;
+}
+
+.search-text {
+height:45px;
+padding-left:60px;
+color:#333;
+padding-bottom:60px;
+
+}
+
+.input-search{
+height:45px;
+padding-left:5px;
+color:#333;
+}
+
+
+.search-text .btn-search{
+font-family:'Raleway', sans-serif;
+border:none;
+color:#FFF;
+height: 45px;
+letter-spacing: 1.5px;
+padding: 1px;
+width: 80px;
+}
+
+.search-text h4{
+color:#888582;
+font-weight: 700;
+font-family: 'Raleway', sans-serif;
+font-size: 18px;
+color: #aece61;
+width:max-content;
+margin-top: 50px;
+}
+
+/*footer bottom */
+.footer-bottom {
+padding-top: 10px;
+padding-bottom: 25px;
+border-top: 1px solid #2f2f33 ;
+background: #262626  ;
+}
+
+.copyright-text p {
+color: #D3D7D9;
+margin-top: 18px;
+margin-bottom: 0;
+font-size:15px;
+}
+
+.copyright-text a {
+color: #D3D7D9;
+margin: 0px 10px 0px 10px;
+}
+
+.copyright-text a:hover {
+color: #aece61  ;
+}
+
+.navbar-inverse .navbar-nav > li > a { /*the color of nav bar when hovered over*/
+  color: #D3D7D9;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #008FD5;
+}
+
+.navbar-inverse {
+  background-color: #262626;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  color: #008FD5;
+  background-color: #080808;
+}
+
