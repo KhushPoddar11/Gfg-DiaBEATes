@@ -1,6 +1,8 @@
 html, body{
-  font: normal 100%/1.8 Signika,sans-serif; } 
-
+  font: normal 100%/1.8 Signika,sans-serif; 
+  min-height: 100%;
+  overflow :scroll;
+}
 p{
   font-size: 16px;
 }
@@ -31,12 +33,83 @@ h1{ font-size:1.802rem;}
 ul.nav li.dropdown:hover ul.dropdown-menu {
         display: block;
     }
+
+
+@media(max-width:963px){
+  .navbar-header {
+        float: none;
+  }
+  .navbar-left,.navbar-right {
+        float: none !important;
+  }
+  .navbar-toggle {
+        display: block;
+  }
+  .navbar-fixed-top {
+    top: 0;
+  }
+  .navbar-collapse.collapse {
+        display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+  
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+  }
+    
+  .navbar-default .navbar-toggle {
+    border: none;
+  }
+    
+  .navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+  }
+    
+  .navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+    
+  .navbar-toggle span:nth-child(3) {
+    opacity: 0;
+  }
+    
+  .navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+    
+  .navbar-toggle.collapsed span:nth-child(2),
+  .navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+  }
+    
+  .navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+  }
+}
+
+    
 /* LOGO 
 -------------------*/
 
 .navbar-brand img{
   margin-top: -14px;
-  margin-left: 40px;
+  margin-left: 0;
   margin-right: 10px;
 }
 
