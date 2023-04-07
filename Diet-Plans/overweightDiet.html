@@ -11,125 +11,10 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Signika:400" rel="stylesheet">
-    <link rel="stylesheet" media="screen and (max-width:1170px)" href="../css/diet-plans.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/utils.css">
 </head>
-<style>
-    #home {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3px 20px;
-
-        margin-top: 20px;
-        height: 500px;
-        width: 100%;
-
-    }
-
-    #home::before {
-        content: "";
-        background: url("./images/home-bg.png") no-repeat center/cover;
-        position: absolute;
-        height: 640px;
-        width: 100%;
-        z-index: -1;
-        top: 0px;
-        left: 0px;
-        opacity: 0.35;
-
-    }
-
-
-
-    .home-div {
-        align-items: center;
-    }
-
-    #weights {
-        margin: 35px;
-        display: flex;
-
-    }
-
-    #weights .box {
-        border: 2px solid #337ab7;
-        padding: 34px;
-        margin: 25px 10px;
-        border-radius: 23px;
-
-        background-color: white;
-    }
-
-    #weights-container {
-
-        margin-top: 60px;
-    }
-
-
-    #weights .box img {
-        height: 160px;
-        width: 180px;
-        display: block;
-        margin: auto;
-    }
-
-
-    .first {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .btn {
-        background-color: #337ab7;
-        color: white;
-    }
-
-
-
-
-    .h-primary {
-        font-size: 2rem;
-        padding: 12px;
-
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    .h-secondary {
-        font-size: 1.9rem;
-        padding: 12px;
-
-    }
-
-    .color {
-        color: white;
-    }
-
-    .btn-h {
-        text-decoration: none;
-
-    }
-
-
-
-    h2,
-    h3,
-    h4,
-    p,
-    ol,
-    li {
-        text-align: center;
-    }
-
-    ol {
-        list-style-position: inside;
-    }
-</style>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-default bg-light">
@@ -204,21 +89,32 @@
         </div>
     </nav>
 
-    <section class="first">
-        <h1 class="h-primary center">Use This Diet Chart to Tweak Your Nutrition for Your Age</h1>
-
-        <button class="btn"><a class="color" href="./diets.html">Explore all diet plans</a>
-        </button>
-
-    </section>
+    <div class="content max-width m-auto my-2">
 
 
-    <section id="home">
-        <div class="home-div">
+        <div class="content-left">
+            <h1 class="h-primary">Use This Diet Chart to Tweak Your Nutrition for Your Age</h1>
+            <p>A healthy diet is essential for good health and nutrition.
+                It protects you against many chronic noncommunicable diseases, such as heart disease, diabetes and
+                cancer. Eating a
+                variety of foods and consuming less salt, sugars and saturated and industrially-produced trans-fats, are
+                essential for
+                healthy diet.</p>
+
+            <button class="btnp"><a class="color" href="./diets.html">Explore all diet plans</a></button>
 
         </div>
 
-    </section>
+        <div class="content-right">
+            <img src="./images/home-bg.png" alt="diabates">
+        </div>
+
+    </div>
+    <div class="max-width m-auto">
+        <hr>
+    </div>
+
+
 
     <section id="weights-container">
         <h1 class="h-secondary center">Select your age and checkout diet plans for overweight</h1>
@@ -269,40 +165,40 @@
 
 
 
-    <h2>Do's And Dont's While Following Diet Plan for Overweight</h2>
-    <p>
+    <h2 class="center">Do's And Dont's While Following Diet Plan for Overweight</h2>
+    <p class="center">
         In Overweight condition, you can start making some simple changes in your
         lifestyles and food habits which are mentioned below, along with the diet
         plan mentioned above:
     </p>
-    <h4>Dos</h4>
-    <ol>
-        <li>Eat more vegetables - add them at every meal</li>
-        <li>Drink plenty of water - you can become hungry when thirsty.</li>
-        <li>Try eating off smaller plates so as to eat smaller portions</li>
-        <li>
+    <h4 class="center">Dos</h4>
+    <ol class="center">
+        <li class="center">Eat more vegetables - add them at every meal</li>
+        <li class="center">Drink plenty of water - you can become hungry when thirsty.</li>
+        <li class="center">Try eating off smaller plates so as to eat smaller portions</li>
+        <li class="center">
             Exercise between 30 minutes to one hour each day with moderate exercise
             brisk walking, team sport, cycling or swimming.
         </li>
-        <li>
+        <li class="center">
             Be mindful of what you put in your mouth and your shopping trolley
         </li>
     </ol>
-    <h4>Don'ts</h4>
-    <ol>
-        <li>
+    <h4 class="center">Don'ts</h4>
+    <ol class="center">
+        <li class="center">
             Rely on soft drinks, sweetened cereals, cookies and cakes, donuts and
             pastries, chips, and confectionery to get you through the day.
         </li>
-        <li>
+        <li class="center">
             Don't skip meals. This will tempt you to snack and DO NOT snack between
             meals
         </li>
-        <li>
+        <li class="center">
             Avoid eating quickly. Sit and chew each bite. Try using chopsticks!
         </li>
-        <li>Don't food shop when you're hungry.</li>
-        <li>Don't eat more than two or three pieces of fruit per day</li>
+        <li class="center">Don't food shop when you're hungry.</li>
+        <li class="center">Don't eat more than two or three pieces of fruit per day</li>
     </ol>
 
     <div class="footer-section">

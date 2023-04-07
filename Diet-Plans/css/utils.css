@@ -1,0 +1,61 @@
+.btnp {
+  background-color: #337ab7;
+
+  border: 2px solid black;
+  width: 70%;
+  border-radius: 15px;
+}
+.btnp a {
+  text-decoration: none;
+}
+
+.btnp:hover {
+  background-color: #206eb3;
+  color: white;
+}
+
+.btnp a:hover {
+  color: white;
+}
+.color {
+  color: white;
+}
+
+.h-primary {
+  font-size: 2rem;
+  padding: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.h-secondary {
+  font-size: 1.9rem;
+  padding: 12px;
+}
+
+.my-2 {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.max-width {
+  max-width: 80vw;
+}
+
+.fontbig {
+  font-size: 2.4rem;
+}
+
+.btn-h {
+  text-decoration: none;
+}

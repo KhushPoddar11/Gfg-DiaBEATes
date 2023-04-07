@@ -1,0 +1,91 @@
+#weights {
+  margin: 35px;
+  display: flex;
+}
+
+#weights .box {
+  border: 2px solid #337ab7;
+  padding: 34px;
+  margin: 25px 10px;
+  border-radius: 23px;
+
+  background-color: white;
+}
+
+#weights-container {
+  margin-top: 60px;
+}
+
+#weights .box img {
+  height: 160px;
+  width: 180px;
+  display: block;
+  margin: auto;
+}
+
+#mainTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+td,
+tr,
+th {
+  border: 1px solid #337ab7;
+}
+
+.table {
+  height: 300px;
+  border: 2px solid #337ab7;
+
+  width: 400px;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  padding: 9px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right img {
+  height: 355px;
+  border-radius: 500px;
+}
+
+/* overweight 20  */
+
+#first {
+  padding: 30px;
+  margin: 0px 20px;
+}
+
+#last-sec {
+  padding: 0px 30px;
+  margin: 0px 20px;
+}
+
+#diet-chart {
+  margin: 40px;
+}
+
+ol {
+  list-style-position: inside;
+}
