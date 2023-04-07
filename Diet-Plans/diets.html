@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dia'BEAT'es</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="../css/diet-plans.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 20px;
+
+        margin-top: 20px;
+        height: 500px;
+        width: 100%;
+
+    }
+
+    #home::before {
+        content: "";
+        background: url("./images/home-bg.png") no-repeat center/cover;
+        position: absolute;
+        height: 640px;
+        width: 100%;
+        z-index: -1;
+        top: 0px;
+        left: 0px;
+        opacity: 0.35;
+
+    }
+
+
+    #home p {
+        color: white;
+        text-align: center;
+
+
+
+    }
+
+    .home-div {
+        align-items: center;
+    }
+
+    #weights {
+        margin: 35px;
+        display: flex;
+
+    }
+
+    #weights .box {
+        border: 2px solid #337ab7;
+        padding: 34px;
+        margin: 25px 10px;
+        border-radius: 23px;
+
+        background-color: white;
+    }
+
+    #weights-container {
+
+        margin-top: 60px;
+    }
+
+    #weights .box img {
+        height: 160px;
+        width: 180px;
+        display: block;
+        margin: auto;
+    }
+
+
+    .first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #mainTable {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    td,
+    tr,
+    th {
+        border: 1px solid #337ab7;
+
+    }
+
+
+
+
+
+    .table {
+        height: 300px;
+        border: 2px solid #337ab7;
+
+        width: 400px;
+    }
+
+
+    .btn {
+        background-color: #337ab7;
+        color: white;
+    }
+
+    .color {
+        color: white;
+    }
+
+    .h-primary {
+        font-size: 2rem;
+        padding: 12px;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .h-secondary {
+        font-size: 1.9rem;
+        padding: 12px;
+
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-default bg-light">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="../img/diaBEATes copy.png" height="50px" width="50px">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" style="">
+
+                <li class="nav-item"><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about-diabetes/types-of-diabetes.html">Types of Diabetes</a></li>
+                        <li><a href="../about-diabetes/diabetes-risks.html">Risk Factors</a></li>
+                        <li><a href="../about-diabetes/signs-and-symptoms.html">Signs/Symptoms</a></li>
+                        <li><a href="../about-diabetes/treatment-and-medication.html">Treatment/Medications</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes and You <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../diabetes-and-you/type1-diabetes.html">Living with Type 1</a></li>
+                        <li><a href="../diabetes-and-you/type2-diabetes.html">Living with Type 2</a></li>
+                        <li><a href="../diabetes-and-you/prediabetes.html">Living with Prediabetes</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../diabetes-and-you/kids-teens-diabetes.html">Diabetes in Kids and Teens</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../diabetes-and-you/control-diabetes.html">Take Control of Diabetes</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Healthy Living <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../healthy-living/diet-and-nutrition.html">Diet and Nutrition</a></li>
+                        <li><a href="../healthy-living/physical-activity.html">Physical Activity</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Health Tools <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../health-tools/bmi-calculator.html">BMI Calculator</a></li>
+                        <li><a href="../health-tools/calorie-calculator.html">Calorie Calculator</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <section class="first">
+        <h1 class="h-primary center">Use This Diet Chart to Tweak Your Nutrition for Your Age</h1>
+
+        <button class="btn"><a class="color" href="../index.html">Explore</a></button>
+
+    </section>
+
+
+    <section id="home">
+        <div class="home-div">
+
+        </div>
+
+    </section>
+
+    <section id="mainTable">
+        <h3 class="h-secondary center ">Check out your category here..</h3>
+        <span class="h-secondary center">Don't know your BMI ? <a href="../health-tools/bmi-calculator.html">check
+                here</a></span>
+
+        <div>
+
+            <table class="table">
+
+
+
+
+                <th class="center ">BMI Range</th>
+                <th class="center">Classification</th>
+
+
+
+
+
+                <tr>
+                    <td class="center">Below 23</td>
+                    <td class="center">Normal</td>
+
+                </tr>
+                <tr>
+                    <td class="center">23</td>
+                    <td class="center">Overweight</td>
+
+                </tr>
+                <tr>
+                    <td class="center">25-35</td>
+                    <td class="center">Clinically obese</td>
+
+                </tr>
+                <tr>
+                    <td class="center">Above 35</td>
+                    <td class="center">Morbidly obese</td>
+
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="weights-container">
+        <h1 class="h-secondary center">Select your age and checkout diet plans for <a
+                href="overweightDiet.html">Overweight</a></h1>
+        <div id="weights">
+
+            <div class="box">
+                <img src="./images/overw-1.png" alt="food ordering">
+                <h2 class="h-secondary center"><a href="./overw-20.html">In your 20s</a></h2>
+                <p class="center">Maintaining a healthy diet helps prevent overweight and obesity, especially for
+                    20-year-olds,
+                    who often live a college
+                    lifestyle. According to the U.S. Department of Agriculture, 72 percent of U.S. men and 64 percent of
+                    U.S.
+                    women are overweight or obese. Appropriate
+                    diets for 20-year-olds are based on gender, activity level and weight-management goals. </p>
+            </div>
+            <div class="box">
+                <img src="./images/overw-2.jpg" alt="food ordering">
+                <h2 class="h-secondary center"><a href="./overw-30.html">In your 30s</a></h2>
+                <p class="center">After leaving our 20s, when it wasn't such a challenge to lose five pounds in less
+                    than 10
+                    days, the 30s are the decade
+                    when metabolism slows and our schedules and eating habits may be dictated by the stress of a career,
+                    marriage
+                    or family.
+                    Even the best laid plans to maintain and lose weight can be difficult to manage. Difficult — but not
+                    impossible.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/overw-3.jpg" alt="food ordering">
+                <h2 class="h-secondary center"> <a href="./overw-40.html">In your 40s</a></h2>
+                <p class="center">Why? In your 40s, you start to lose muscle mass, which changes the composition of your
+                    body,
+                    explains Keri Peterson, MD,
+                    Women's Health advisor. "Having higher muscle mass raises your metabolism, so your body burns more
+                    calories,"
+                    she adds.
+                    If you're losing muscle mass, your metabolism will start to slow down and you expend fewer calories
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="weights-container">
+        <h1 class="h-secondary center">Select your age and checkout diet plans for <a
+                href="underweightDiet.html">Underweight</a></h1>
+        <div id="weights">
+
+            <div class="box">
+                <img src="./images/overw-1.png" alt="under-weight">
+                <h2 class="h-secondary center"><a href="./underw-20.html">In your 20s</a></h2>
+                <p class="center">The American Dietetic Association (ADA) defines the ideal body mass index (BMI) as
+                    between 20 and 25. Thus, anyone below
+                    that range would be considered underweight and those with a BMI from 18.5 to 17.5 extremely
+                    underweight. According to
+                    Elena Blanco-Schumacher, RD, a clinical dietitian within the Christiana Care Health System at the
+                    Helen F. Graham Cancer
+                    Center in Wilmington, Del., 8% to 9% of the population is, by these standards, underweight</p>
+            </div>
+            <div class="box">
+                <img src="./images/overw-2.jpg" alt="under-weight">
+                <h2 class="h-secondary center"><a href="./underw-30.html">In your 30s</a></h2>
+                <p class="center">While being underweight often appears preferable to being overweight, the reality is
+                    that—just as with obesity—being
+                    overly thin has risks and repercussions. Blanco-Schumacher notes that those who are underweight are
+                    prone to infection
+                    due to weak and easily compromised immune systems and tend to have low muscle mass, hair loss, and
+                    in some cases
+                    disrupted hormone regulation. Being underweight can also derail intake and absorption of vital
+                    nutrients, including
+                    amino acids, vitamins, and minerals, leading to increased risk of osteoporosis and anemia.
+                </p>
+            </div>
+            <div class="box">
+                <img src="./images/overw-3.jpg" alt="under-weight">
+                <h2 class="h-secondary center"><a href="./underw-40.html">In your 40s</a></h2>
+                <p class="center">Physical origins of underweight include genetics and illness. Those with “lean genes”
+                    may have a higher metabolic rate,
+                    Blanco-Schumacher says, but should be wary of excessive weight loss. “High risk for underweight is
+                    weight loss greater
+                    than 2% total body mass in one week; 5% in one month; 7.5% in three months; and 10% in six months,”
+                    she says. Some bouts
+                    with the flu or other viruses can cause unprompted weight loss, and many medications can suppress
+                    appetite or actually
+                    cause weight loss. Patients should check with their pharmacist if they have recently started a new
+                    medication and are
+                    now experiencing otherwise unexplained weight loss..</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="footer-section">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <h6 class="footer-headings">QUICK LINKS</h6>
+                        <ul>
+                            <li><a href="../about-diabetes.html"> Diabetes</a> </li>
+                            <li><a href="../healthy-living/diet-and-nutrition.html"> Diet & Nutrition</a> </li>
+                            <li><a href="../health-tools/bmi-calculator.html"> BMI Calculator</a> </li>
+                            <li><a href="../health-tools/calorie-calculator.html"> Calorie Calculator</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h6 class="footer-headings">SHOW YOUR SUPPORT</h6>
+                        <a href="http://diya.org.in/donations/donate"><button style="margin-bottom:10px" type="button"
+                                class="btn btn-primary btn-lg btn-lg_body">DONATE</button></a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5">
+                                <h6 class="text-center footer-headings">STAY CONNECTED</h6>
+                                <div class="text-center">
+                                    <a href="https://www.facebook.com"><i id="social-fb"
+                                            class="fa fa-facebook-square fa-2x social"></i></a>
+                                    <a href="https://twitter.com"><i id="social-tw"
+                                            class="fa fa-twitter-square fa-2x social"></i></a>
+                                    <a href="https://plus.google.com/"><i id="social-gp"
+                                            class="fa fa-google-plus-square fa-2x social"></i></a>
+                                    <a href="mailto:diatension@gmail.com"><i id="social-em"
+                                            class="fa fa-envelope-square fa-2x social"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <h6 class="text-center footer-headings">SIGN UP FOR OUR NEWSLETTER</h6>
+                                <form action="#" class="form-inline">
+                                    <input type="email" class="form-control" placeholder="Email" Address="">
+                                    <button type="submit"
+                                        class="btn btn-primary btn-search form-control">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
