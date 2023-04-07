@@ -29,8 +29,10 @@ function computeBMI()
         var output =  Math.round(BMI*100)/100;
         if (output < 10) 
         document.getElementById("comment").innerText = "you entered a wrong value!";
-        else if (10 <= output && output < 14) 
-        document.getElementById("comment").innerText = "This means you are seriously underweight for your height!" ; 
+        else if (10 <= output && output < 14){
+          document.getElementById("comment").innerText = "This means you are seriously underweight for your height!"+"\n" ; 
+          document.getElementById("comment").appendChild(a);
+        } 
         else if (14 <= output && output < 18.5)
         {
           document.getElementById("comment").innerText = "This means you are slightly underweight for your height."+"\n ";
