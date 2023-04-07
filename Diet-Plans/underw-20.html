@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dia'BEAT'es</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="../css/diet-plans.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    #first {
+        padding: 30px;
+        margin: 0px 20px;
+
+    }
+
+    #last-sec {
+        padding: 0px 30px;
+        margin: 0px 20px;
+
+    }
+
+
+
+
+    #weights {
+        margin: 35px;
+        display: flex;
+
+    }
+
+    #weights .box {
+        border: 2px solid #337ab7;
+        padding: 20px;
+        margin: 25px 10px;
+        border-radius: 23px;
+
+        background-color: white;
+    }
+
+    #weights-container {
+
+        margin-top: 10px;
+    }
+
+    .h-primary {
+        font-size: 2rem;
+        padding: 12px;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .h-secondary {
+        font-size: 1.9rem;
+        padding: 12px;
+
+    }
+
+
+    #diet-chart {
+        margin: 40px;
+    }
+
+    .fontbig {
+        font-size: 2.4rem;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-default bg-light">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="../img/diaBEATes copy.png" height="50px" width="50px">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" style="">
+
+                <li class="nav-item"><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about-diabetes/types-of-diabetes.html">Types of Diabetes</a></li>
+                        <li><a href="../about-diabetes/diabetes-risks.html">Risk Factors</a></li>
+                        <li><a href="../about-diabetes/signs-and-symptoms.html">Signs/Symptoms</a></li>
+                        <li><a href="../about-diabetes/treatment-and-medication.html">Treatment/Medications</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes and You <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../diabetes-and-you/type1-diabetes.html">Living with Type 1</a></li>
+                        <li><a href="../diabetes-and-you/type2-diabetes.html">Living with Type 2</a></li>
+                        <li><a href="../diabetes-and-you/prediabetes.html">Living with Prediabetes</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../diabetes-and-you/kids-teens-diabetes.html">Diabetes in Kids and Teens</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../diabetes-and-you/control-diabetes.html">Take Control of Diabetes</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Healthy Living <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../healthy-living/diet-and-nutrition.html">Diet and Nutrition</a></li>
+                        <li><a href="../healthy-living/physical-activity.html">Physical Activity</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Health Tools <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../health-tools/bmi-calculator.html">BMI Calculator</a></li>
+                        <li><a href="../health-tools/calorie-calculator.html">Calorie Calculator</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <section id="diet-chart">
+        <h1 class="center fontbig">Diet Chart For Your 20s</h1>
+        <h2>Have Snacks More Often</h2>
+        <p>
+            Load up your desk drawer or office fridge with these healthy treats.
+
+        </p>
+
+        <ol>
+            <li>Greek yogurt (6 ounces) with 1 tablespoon chopped walnuts</li>
+            <li>Reduced-fat string cheese and 10 whole-grain crackers</li>
+            <li>Granola bar and a nonfat latte
+            </li>
+            <li>
+                4 ounces nonfat cottage cheese and a mini box of raisins
+
+            </li>
+            <li>
+                6 dried apricots and 2 tablespoons sunflower seeds
+
+            </li>
+            <li>Energy bar and 12 almonds</li>
+            <li>20 mini carrots dipped in 1/4 cup hummus</li>
+            <li>Single-serve vanilla soy milk and 1/2 cup whole-grain cereal</li>
+        </ol>
+
+        <h2>Your 20-Something Meal Plan</h2>
+
+        <ol>
+            <li>
+                <strong>Breakfast:</strong> 2 egg brown bread sandwich + green chutney + 1 cup milk + 3 cashews + 4
+                almonds + 2 walnuts, 1 cup beans potato vegetable + 3 chapatti + salad
+            </li>
+            <li>
+                <strong>Morning Snack:</strong> 1 cup banana shake 1 cup mango shake
+            </li>
+            <li>
+                <strong>Lunch:</strong>1 cup arhar dal + 1 cup potato curry + 3 chapatti +
+                1/2 cup rice + 1/2 cup low fat curd + salad, 1 cup pomegranate juice + 2 butter toasted bread
+
+            </li>
+            <li>
+                <strong>Afternoon Snack:</strong> 1 cup strawberry smoothie + 1 cup vegetable poha 1 cup moong dal/
+                chicken curry + 1 cup potato and caulifllower vegetable + 3 chapatti + 1/2 cup rice + salad
+
+            </li>
+            <li>
+                <strong>Dinner:</strong> 1.5 cup chicken curry + 3 chapatti + salad 3 onion stuffed parantha + 1 cup
+                curd + 3 cashews + 4 almonds + 2 walnuts
+
+            </li>
+            <li>
+                <strong>Evening Treat:</strong> Gingerbread ice cream sandwich (fill 2 gingersnaps with one-half cup
+                light vanilla ice cream)
+
+            </li>
+
+            <li>
+                <strong>Nutrition info for the day:</strong> 2,541 calories, 100g protein, 70g fat (5g sat), 593g carbs,
+                54g fiber
+
+
+            </li>
+
+
+        </ol>
+    </section>
+
+    <section id="first">
+        <div class="first-sec">
+            <h2>Some Important Things to Know In Your 2os</h2>
+            <p>
+                Just like obesity causes health concerns, having less weight than the normal also poses health issues.
+                Being underweight
+                can be result of poor nutrition and should be a matter of concern. If the body does not receive adequate
+                amounts of
+                nutrients, the body fails to function to its utmost. This could result in the imbalance in the
+                metabolism. Inculcating a
+                healthy diet for underweight will provide the necessary nutrients for better functioning of the body.
+            </p>
+
+            <h2>How to deal with underweight</h2>
+            <p>
+                To deal with underweight, maintaining a proper nutritious diet is important. We create a weight gain
+                meal plan for
+                underweight, easily followed by both males and females. We try to add food with high-calorie foods for
+                underweight
+                adults. This diet meal plan is used to provide the right nutrients, vitamins, and minerals required by
+                the body. You can
+                easily buy food items listed in the underweight diet meal plan in your local markets.
+
+            </p>
+
+            <h2>What to avoid</h2>
+            <p>
+                We also list those food items that should be avoided while following the underweight meal plan. While
+                following this
+                Indian diet meal plan, also follow these lifestyle changes and habits. We also listed out meal timing
+                and what food
+                items you need to eat to gain weight. These healthy meals are listed after discussion with professional
+                dietitians.
+
+            </p>
+
+
+            <h2>Macronutrient Composition</h2>
+            <p>
+                A healthy diet for a 20-year-old consists of a good balance of carbohydrates, protein and fat. The
+                Institute of Medicine
+                recommends that adults ages 19 and older consume 45 to 65 percent of their calories from carbohydrates,
+                10 to 35 percent
+                from protein and 20 to 35 percent of their daily calories from fat. The institute also encourages
+                20-year-old men to
+                consume at least 130 grams of carbohydrates and 56 grams of protein each day and 20-year-old women to
+                consume at least
+                130 grams of carbs and 46 grams of protein every day; pregnant and nursing women require at least 71
+                grams of protein
+                each day.
+
+            </p>
+
+
+
+        </div>
+    </section>
+
+    <section id="weights-container">
+        <h1 class="h-secondary center fontbig">Key Nutrients You Need To Know</h1>
+        <div id="weights">
+
+            <div class="box">
+
+                <h2 class="h-secondary center">Protein</h2>
+                <p class="center">Protein helps keep you full and provides the building blocks so you can make and keep
+                    muscle. "Recent studies suggest
+                    that, at a minimum, we need 60 to 70 grams of protein a day," says Leslie Bonci, M.P.H., R.D.,
+                    director of sports
+                    medicine at the University of Pittsburgh Medical Center. Get your quota by eating skinless white
+                    meat poultry, lean
+                    steak, fish, eggs, beans, tofu, and low-fat dairy. </p>
+            </div>
+            <div class="box">
+
+                <h2 class="h-secondary center">Potassium</h2>
+                <p class="center">In order for your muscles and heart to function properly, you need to consume a hefty
+                    dose of potassium. But most women
+                    in the U.S. aged 20 to 39 get less than half the recommended amount, according to the USDA. Munching
+                    on 2 cups of fruit
+                    and 2 1/2 cups of veggies daily will help you get all the potassium you need.
+                </p>
+            </div>
+            <div class="box">
+
+                <h2 class="h-secondary center">Omega-3 fatty acids</h2>
+                <p class="center">These polyunsaturated fatty acids may boost serotonin, a feel-good chemical in your
+                    brain that research shows may be
+                    linked to depression when transmitted in low levels. Since women are twice as likely as men to be
+                    diagnosed with
+                    depression, start incorporating salmon and tuna into your diet, which are rich in omega-3s. You can
+                    also get your fill
+                    from walnuts, ground flaxseed, and canola oil.
+                    p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="last-sec">
+
+        <div class="last">
+
+            <h2>Underweight Diet Restrictions: Food Items To Limit
+            </h2>
+            <p>
+            <ol>
+                <li>Whole Eggs. Once feared for being high in cholesterol, whole eggs have been making a comeback. ...
+                </li>
+                <li>Leafy Greens.
+                </li>
+                <li>Salmon</li>
+                <li>Cruciferous Vegetables.
+                </li>
+                <li>Lean Beef and Chicken Breast</li>
+                <li>Boiled Potatoes.
+                </li>
+                <li>Tuna</li>
+                <li>Beans and Legumes.
+                </li>
+            </ol>
+            </p>
+
+            <h2>Food Items You Can Easily Consume in Underweight Diet Plan
+
+            </h2>
+            <p>
+            <ol>
+                <li>Lean Red Meat: Steak contains a ton of protein and iron. Red meat is high in cholesterol, so most
+                    food professionals
+                    don’t recommend it as part of a healthy diet more than a few times per week.
+                </li>
+
+                <li>Real Nut Butters: Natural peanut butter is packed with protein and fats, making it a great choice
+                    for people trying to
+                    gain weight the healthy way. One tablespoon contains around 100 calories and has 4 grams of protein.
+                </li>
+
+                <li>Whole Fat Milk: Dietitians say that one simple substitution you can make when trying to gain weight
+                    is swapping your
+                    skim milk for whole milk. It’s only 60 calories more a glass as the fat is left in.
+                </li>
+                <li>Tropical Fruit: Fruits like mango, papaya, bananas, and pineapple are amazing choices according to
+                    food experts. They
+                    are full of natural sugars and can give you great energy.</li>
+                <li>Avocado: These delicious green vegetables are an excellent way to add heart-healthy fats to your
+                    diet. One half of an
+                    avocado contains 140 calories, but also contain high levels of potassium, folic acid, and vitamin E.
+                </li>
+                <li>Natural Granola: Natural granola with no added refined sugar is a great cereal to enjoy if you are
+                    trying to gain
+                    weight. This tasty snack is made from rolled oats, sugar, and healthy fats (like nuts and coconut
+                    oil). More dried fruit
+                    and nuts can also be added.
+                </li>
+                <li>Whole Wheat Bread: Nutritionists say that eating healthy bread products is a great way to start
+                    gaining weight. If
+                    you’re adding bread to your diet, look for whole grains. Nuts: Nuts are a great snack for gaining
+                    weight. They are full
+                    of fat and nutrients, but also contain a great deal of fiber. Eating only a handful of nuts can keep
+                    you full for hours.
+                    Not all nuts are equal for fiber though.
+                </li>
+                <li>Cheese: Try goat cheese with eggs, Swiss with roasted chicken, and Parmesan on top of asparagus. On
+                    its own, cheese also
+                    makes a great snack because it’s high in protein.</li>
+            </ol>
+
+
+            </p>
+
+            <h2>Make fast food healthy
+            </h2>
+            <p>
+                Grabbing dinner on the go means you may be missing out on crucial nutrients, says Bonnie Taub-Dix, R.D.,
+                a spokesperson
+                for the American Dietetic Association. Slave over the stove? Nah. Choose healthy convenience foods such
+                as rotisserie
+                chicken, shrimp cocktail, steamed dumplings, and salads and enjoy them with speedy additions from your
+                kitchen such as
+                whole wheat pasta, instant brown rice, and frozen veggies. (If you're looking for a quick homemade meal,
+                try meal
+                prepping.)
+
+
+            </p>
+
+
+            <h2>Drink to your health
+            </h2>
+            <p>
+                Margaritas, mojitos, and cosmos can add up faster than you can say cheers. Enter light beer (110
+                calories in a 12-ounce
+                bottle). It's filling, so you're less likely to want a second, and it takes a good, long time to drink.
+
+
+
+            </p>
+        </div>
+
+    </section>
+
+    <div class="footer-section">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <h6 class="footer-headings">QUICK LINKS</h6>
+                        <ul>
+                            <li><a href="../about-diabetes.html"> Diabetes</a> </li>
+                            <li><a href="../healthy-living/diet-and-nutrition.html"> Diet & Nutrition</a> </li>
+                            <li><a href="../health-tools/bmi-calculator.html"> BMI Calculator</a> </li>
+                            <li><a href="../health-tools/calorie-calculator.html"> Calorie Calculator</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h6 class="footer-headings">SHOW YOUR SUPPORT</h6>
+                        <a href="http://diya.org.in/donations/donate"><button style="margin-bottom:10px" type="button"
+                                class="btn btn-primary btn-lg btn-lg_body">DONATE</button></a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5">
+                                <h6 class="text-center footer-headings">STAY CONNECTED</h6>
+                                <div class="text-center">
+                                    <a href="https://www.facebook.com"><i id="social-fb"
+                                            class="fa fa-facebook-square fa-2x social"></i></a>
+                                    <a href="https://twitter.com"><i id="social-tw"
+                                            class="fa fa-twitter-square fa-2x social"></i></a>
+                                    <a href="https://plus.google.com/"><i id="social-gp"
+                                            class="fa fa-google-plus-square fa-2x social"></i></a>
+                                    <a href="mailto:diatension@gmail.com"><i id="social-em"
+                                            class="fa fa-envelope-square fa-2x social"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <h6 class="text-center footer-headings">SIGN UP FOR OUR NEWSLETTER</h6>
+                                <form action="#" class="form-inline">
+                                    <input type="email" class="form-control" placeholder="Email" Address="">
+                                    <button type="submit"
+                                        class="btn btn-primary btn-search form-control">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
