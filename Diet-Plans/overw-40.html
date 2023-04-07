@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dia'BEAT'es</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="../css/diet-plans.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    #first {
+        padding: 30px;
+        margin: 0px 20px;
+
+    }
+
+    #last-sec {
+        padding: 0px 30px;
+        margin: 0px 20px;
+
+    }
+
+
+
+
+    #weights {
+        margin: 35px;
+        display: flex;
+
+    }
+
+    #weights .box {
+        border: 2px solid #337ab7;
+        padding: 20px;
+        margin: 25px 10px;
+        border-radius: 23px;
+
+        background-color: white;
+    }
+
+    #weights-container {
+
+        margin-top: 10px;
+    }
+
+    .h-primary {
+        font-size: 2rem;
+        padding: 12px;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .h-secondary {
+        font-size: 1.9rem;
+        padding: 12px;
+
+    }
+
+
+    #diet-chart {
+        margin: 40px;
+    }
+
+    .fontbig {
+        font-size: 2.4rem;
+    }
+
+
+    ol {
+        list-style-position: inside;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-default bg-light">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="../img/diaBEATes copy.png" height="50px" width="50px">
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" style="">
+
+                <li class="nav-item"><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../about-diabetes/types-of-diabetes.html">Types of Diabetes</a></li>
+                        <li><a href="../about-diabetes/diabetes-risks.html">Risk Factors</a></li>
+                        <li><a href="../about-diabetes/signs-and-symptoms.html">Signs/Symptoms</a></li>
+                        <li><a href="../about-diabetes/treatment-and-medication.html">Treatment/Medications</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes and You <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../diabetes-and-you/type1-diabetes.html">Living with Type 1</a></li>
+                        <li><a href="../diabetes-and-you/type2-diabetes.html">Living with Type 2</a></li>
+                        <li><a href="../diabetes-and-you/prediabetes.html">Living with Prediabetes</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../diabetes-and-you/kids-teens-diabetes.html">Diabetes in Kids and Teens</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="../diabetes-and-you/control-diabetes.html">Take Control of Diabetes</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Healthy Living <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../healthy-living/diet-and-nutrition.html">Diet and Nutrition</a></li>
+                        <li><a href="../healthy-living/physical-activity.html">Physical Activity</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Health Tools <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../health-tools/bmi-calculator.html">BMI Calculator</a></li>
+                        <li><a href="../health-tools/calorie-calculator.html">Calorie Calculator</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <section id="diet-chart">
+        <h1 class="center fontbig">Diet Chart For Your 40s</h1>
+        <h2>Eat nutrient rich snacks</h2>
+        <p>
+            Load up your desk drawer or office fridge with these healthy treats.
+
+        </p>
+
+        <ol>
+            <li>Greek yogurt (6 ounces) with 1 tablespoon chopped walnuts</li>
+            <li>Reduced-fat string cheese and 10 whole-grain crackers</li>
+            <li>Granola bar and a nonfat latte
+            </li>
+            <li>
+                4 ounces nonfat cottage cheese and a mini box of raisins
+
+            </li>
+            <li>
+                6 dried apricots and 2 tablespoons sunflower seeds
+
+            </li>
+            <li>Energy bar and 12 almonds</li>
+            <li>20 mini carrots dipped in 1/4 cup hummus</li>
+            <li>Single-serve vanilla soy milk and 1/2 cup whole-grain cereal</li>
+        </ol>
+
+        <h2>Your 40-Something Meal Plan</h2>
+
+        <ol>
+            <li>
+                <strong>Breakfast:</strong> 1 cup high-fiber cereal (such as bran flakes) with 1 cup 1-percent milk and
+                1 cup
+                blueberries, and 1 cup green tea
+
+            </li>
+            <li>
+                <strong>Morning Snack:</strong> 1 medium apple with 1 tablespoon soy-nut butter
+
+
+            </li>
+            <li>
+                <strong>Lunch:</strong>Veggie burger on a whole wheat bun with 2 slices low-fat cheddar cheese (1 ounce
+                each), and a 6-ounce can low-sodium
+                vegetable juice
+
+
+            </li>
+            <li>
+                <strong>Afternoon Snack:</strong>2 tablespoons hummus with 6 whole wheat crackers
+
+
+            </li>
+            <li>
+                <strong>Dinner:</strong> 3 ounces broiled salmon over 1 cup barley pilaf, and 6 asparagus spears sautéed
+                in 1 teaspoon olive oil
+
+            </li>
+            <li>
+                <strong>Evening Treat:</strong> 6-ounce container light vanilla yogurt topped with 1 tablespoon mini
+                chocolate chips
+
+            </li>
+
+            <li>
+                <strong>Nutrition info for the day:</strong> 1,656 calories, 92g protein, 48g fat (13g sat), 228g carbs,
+                39g fiber
+
+
+
+            </li>
+
+
+        </ol>
+    </section>
+
+    <section id="first">
+        <div class="first-sec">
+            <h2>Some Important Things to Know In Your 40s</h2>
+
+            <h2>Understand that your body is changing — and that's okay.</h2>
+            <p>
+                As you age, your body begins to go through estrogen withdrawal, which may change the areas your body
+                puts on weight. "In
+                her childbearing years, a woman puts on weight in her butt, hips, and thighs to fuel breastfeeding,"
+                says Pamela Peeke,
+                M.D., author of Fit to Live. "The fat cells in those areas have estrogen receptors. As you go through
+                estrogen
+                withdrawal, those receptors aren't being activated anymore." (On the flip side, you could also
+                experience estrogen
+                dominance.)
+            </p>
+            <p>
+                Maintaining a healthy diet helps prevent overweight and obesity, especially for 40-year-olds, who often
+                live a buys
+                lifestyle. According to the U.S. Department of Agriculture, 72 percent of U.S. men and 64 percent of
+                U.S. women are
+                overweight or obese. A study published in a 2007 edition of the “Journal of the American Dietetic
+                Association” found
+                that college students who were more knowledgeable about nutrition guidelines had healthier eating
+                patterns. Appropriate
+                diets for 40-year-olds are based on gender, activity level and weight-management goals
+            </p>
+
+            <h2>Calories</h2>
+            <p>
+                The USDA provides calorie recommendations for all adults, including 40-year-olds. Based on these
+                guidelines, men ages 19
+                to 40 require 2,400 to 2,600 calories if they are sedentary, 2,600 to 2,800 calories if they are
+                moderately active and
+                about 3,000 calories per day if they are active or participate in physical activity equivalent to
+                walking more than 3
+                miles per day. The USDA also estimates that women ages 19 to 40 require 1,800 to 2,000 calories if they
+                are sedentary,
+                2,000 to 2,200 calories if they are moderately active and about 2,400 calories per day if they are
+                active.
+
+            </p>
+
+            <h2>Weight loss</h2>
+            <p>
+                Overweight and obese 40-year-olds with a body mass index of 25 or above may consider a reduced-calorie
+                diet for weight
+                loss. BMI is a measurement calculated from weight and height and is a good indicator of body fat and
+                chronic-disease
+                risks. To calculate your BMI, multiply your weight in pounds by 703, divide by your height in inches and
+                divide again by
+                your height in inches; you can also use an online BMI calculator like the one provided by the National
+                Heart, Lung and
+                Blood Institute. To safely and effectively lose excess body weight, the Academy of Nutrition and
+                Dietetics encourages an
+                energy reduction of 500 to 1,00
+
+            </p>
+
+
+            <h2>Macronutrient Composition</h2>
+            <p>
+                A healthy diet for a 40-year-old consists of a good balance of carbohydrates, protein and fat. The
+                Institute of Medicine
+                recommends that adults ages 35 and older consume 45 to 65 percent of their calories from carbohydrates,
+                10 to 35 percent
+                from protein and 20 to 35 percent of their daily calories from fat. The institute also encourages
+                40-year-old men to
+                consume at least 130 grams of carbohydrates and 56 grams of protein each day and 40-year-old women to
+                consume at least
+                130 grams of carbs and 46 grams of protein every day; pregnant and nursing women require at least 71
+                grams of protein
+                each day.
+
+            </p>
+
+            <h2>Sample 2,600-Calorie Plan
+            </h2>
+            <p>
+                A 2,600-calorie diet is often appropriate for 40-year-old men who are moderately active and some
+                large-framed sedentary
+                40-year-old men. A healthy, sample USDA 2,600-calorie meal plans includes 3.5 cups of vegetables; 2 cups
+                of fruits; 9
+                ounces of grains; 3 cups of dairy foods; 6.5 ounces of protein foods such as lean meats, seafood, eggs
+                and soy products;
+                8 teaspoons of oils; and 362 additional calories each day.
+
+
+            </p>
+
+
+            <h2>Sample 2,000-Calorie Plan
+            </h2>
+            <p>
+                A 2,000-calorie diet is usually appropriate for 40-year-old women who are sedentary to moderately
+                active. A USDA sample
+                2,000-calorie meal plan consists of 2.5 cups of vegetables; 2 cups of fruits; 6 ounces of grains; 3 cups
+                of dairy foods;
+                5.5 ounces of protein foods such as lean meats, seafood, eggs and soy products; 6 teaspoons of oils; and
+                258 extra
+                calories each day.
+
+
+            </p>
+        </div>
+    </section>
+
+    <section id="weights-container">
+        <h1 class="h-secondary center fontbig">Key Nutrients You Need To Know</h1>
+        <div id="weights">
+
+            <div class="box">
+
+                <h2 class="h-secondary center">Calcium</h2>
+                <p class="center">As you approach menopause, bone-building estrogen starts to decline and calcium
+                    becomes more important. Ironically, you
+                    absorb less calcium from the food you eat because your stomach doesn't make as much of the acid
+                    necessary for
+                    absorption. Aim for 1,000 milligrams a day from low-fat dairy, supplements, or a combination.
+                </p>
+            </div>
+            <div class="box">
+
+                <h2 class="h-secondary center">Vitamin D</h2>
+                <p class="center">This nutrient helps your body absorb calcium, keeps your immune system strong,
+                    protects against breast and colon
+                    cancers, and even prevents hearing loss. But by the time you reach your 40s, your vitamin D levels
+                    quickly start to
+                    plummet. "There's no way to get enough vitamin D from your diet because very few foods contain it,"
+                    says Bonci. Your
+                    best bet: a daily supplement of 600 to 1,000 international units. (The FDA regulates supplements
+                    like food rather than
+                    drugs, i.e. less strictly. If you're thinking of taking a supplement, always check with your doctor
+                    first.)
+
+                </p>
+            </div>
+            <div class="box">
+
+                <h2 class="h-secondary center">Fiber</h2>
+                <p class="center">Fiber not only makes you feel fuller longer, but it also "helps decrease cholesterol
+                    and your risk for colon cancer,"
+                    says Dr. Peeke. Try to eat a mix of soluble (from fruits, vegetables, barley, and oats) and
+                    insoluble (from whole-wheat
+                    bread and bran) fiber daily.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="last-sec">
+
+        <div class="last">
+
+            <h2>Cut just 100 calories a day.
+            </h2>
+            <p>
+                "For every decade after 40, there's roughly a one percent decrease in calorie requirements," says Bonci.
+                "That's the
+                equivalent of one extra cookie." (It's also important not to deprive yourself, so you should always meet
+                with a
+                dietitian to get personal caloric recommendations, and if you want the cookie, go for it.)
+
+
+            </p>
+
+
+            <h2>Make fast food healthy
+            </h2>
+            <p>
+                Grabbing dinner on the go means you may be missing out on crucial nutrients, says Bonnie Taub-Dix, R.D.,
+                a spokesperson
+                for the American Dietetic Association. Slave over the stove? Nah. Choose healthy convenience foods such
+                as rotisserie
+                chicken, shrimp cocktail, steamed dumplings, and salads and enjoy them with speedy additions from your
+                kitchen such as
+                whole wheat pasta, instant brown rice, and frozen veggies. (If you're looking for a quick homemade meal,
+                try meal
+                prepping.)
+
+
+            </p>
+
+
+            <h2>Drink to your health
+            </h2>
+            <p>
+                Margaritas, mojitos, and cosmos can add up faster than you can say cheers. Enter light beer (110
+                calories in a 12-ounce
+                bottle). It's filling, so you're less likely to want a second, and it takes a good, long time to drink.
+
+
+
+            </p>
+        </div>
+
+    </section>
+
+    <div class="footer-section">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <h6 class="footer-headings">QUICK LINKS</h6>
+                        <ul>
+                            <li><a href="../about-diabetes.html"> Diabetes</a> </li>
+                            <li><a href="../healthy-living/diet-and-nutrition.html"> Diet & Nutrition</a> </li>
+                            <li><a href="../health-tools/bmi-calculator.html"> BMI Calculator</a> </li>
+                            <li><a href="../health-tools/calorie-calculator.html"> Calorie Calculator</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <h6 class="footer-headings">SHOW YOUR SUPPORT</h6>
+                        <a href="http://diya.org.in/donations/donate"><button style="margin-bottom:10px" type="button"
+                                class="btn btn-primary btn-lg btn-lg_body">DONATE</button></a>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5">
+                                <h6 class="text-center footer-headings">STAY CONNECTED</h6>
+                                <div class="text-center">
+                                    <a href="https://www.facebook.com"><i id="social-fb"
+                                            class="fa fa-facebook-square fa-2x social"></i></a>
+                                    <a href="https://twitter.com"><i id="social-tw"
+                                            class="fa fa-twitter-square fa-2x social"></i></a>
+                                    <a href="https://plus.google.com/"><i id="social-gp"
+                                            class="fa fa-google-plus-square fa-2x social"></i></a>
+                                    <a href="mailto:diatension@gmail.com"><i id="social-em"
+                                            class="fa fa-envelope-square fa-2x social"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <h6 class="text-center footer-headings">SIGN UP FOR OUR NEWSLETTER</h6>
+                                <form action="#" class="form-inline">
+                                    <input type="email" class="form-control" placeholder="Email" Address="">
+                                    <button type="submit"
+                                        class="btn btn-primary btn-search form-control">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
