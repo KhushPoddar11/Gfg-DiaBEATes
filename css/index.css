@@ -1,7 +1,6 @@
 html, body{
   font: normal 100%/1.8 Signika,sans-serif; 
   min-height: 100%;
-  overflow :scroll;
 }
 p{
   font-size: 16px;
@@ -207,10 +206,8 @@ content:"\003E";
 }
 
 #big-logo{
-    margin-top: 10px;
-    margin-bottom: -60px;
-    margin-left: -120px;
-  
+    margin-top: 88px;
+    margin-bottom: 90px;
 }
 
 .donation{
