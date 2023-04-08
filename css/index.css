@@ -1,7 +1,6 @@
 html, body{
   font: normal 100%/1.8 Signika,sans-serif; 
   min-height: 100%;
-  overflow :scroll;
 }
 p{
   font-size: 16px;
@@ -35,7 +34,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     }
 
 
-@media(max-width:963px){
+@media(max-width:768px){
   .navbar-header {
         float: none;
   }
@@ -50,6 +49,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   }
   .navbar-collapse.collapse {
         display: none!important;
+        overflow: visible;
   }
   .navbar-nav {
     float: none!important;
@@ -57,6 +57,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   }
   .navbar-nav>li {
     float: none;
+    padding-left: 5px;
   }
   .navbar-nav>li>a {
     padding-top: 10px;
@@ -205,10 +206,8 @@ content:"\003E";
 }
 
 #big-logo{
-    margin-top: 10px;
-    margin-bottom: -60px;
-    margin-left: -120px;
-  
+    margin-top: 88px;
+    margin-bottom: 90px;
 }
 
 .donation{
