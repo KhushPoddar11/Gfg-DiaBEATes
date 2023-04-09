@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia'BEAT'es</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400" rel="stylesheet">
+    <link rel = "stylesheet" href = "foodRecipe.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-default bg-light">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="margin:0;">
+        <img alt="Brand" src="../img/diaBEATes copy.png" height="50px" width="50px">
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="nav-item" style=""><a href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+
+        
+        <li class="dropdown">
+          <a href="#"  role="button" aria-haspopup="true" aria-expanded="false">Diabetes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../about-diabetes/types-of-diabetes.html">Types of Diabetes</a></li>
+            <li><a href="../about-diabetes/diabetes-risks.html">Risk Factors</a></li>
+            <li><a href="../about-diabetes/signs-and-symptoms.html">Signs/Symptoms</a></li>
+            <li><a href="../about-diabetes/treatment-and-medication.html">Treatment/Medications</a></li>
+          </ul>
+        </li>
+       
+        <li class="dropdown">
+          <a href="#" role="button" aria-haspopup="true" aria-expanded="false">Diabetes and You <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../diabetes-and-you/type1-diabetes.html">Living with Type 1</a></li>
+            <li><a href="../diabetes-and-you/type2-diabetes.html">Living with Type 2</a></li>
+            <li><a href="../diabetes-and-you/prediabetes.html">Living with Prediabetes</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="../diabetes-and-you/kids-teens-diabetes.html">Diabetes in Kids and Teens</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="../diabetes-and-you/control-diabetes.html">Take Control of Diabetes</a></li>
+         </ul>
+       </li>
+
+          <li class="dropdown">
+              <a href="#"  role="button" aria-haspopup="true" aria-expanded="false">Healthy Living <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../healthy-living/diet-and-nutrition.html">Diet and Nutrition</a></li>
+                <li><a href="../healthy-living/physical-activity.html">Physical Activity</a></li>
+              </ul>
+            </li>          
+          <li class="dropdown">
+            <a href="#"  role="button" aria-haspopup="true" aria-expanded="false">Health Tools <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="../health-tools/bmi-calculator.html">BMI Calculator</a></li>
+              <li><a href="../health-tools/calorie-calculator.html">Calorie Calculator</a></li>
+            </ul>
+          </li>
+      </ul>
+    </div>
+</nav>
+  
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Enter an ingredient to find recipes</h2>
+        
+        <div class = "meal-search-box">
+          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
+          <button type = "submit" class = "search-btn btn" id = "search-btn">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title1">Your Search Results:</h2>
+        <div id= "meal">
+        
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+
+        <div class = "meal-details-content">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src = "foodRecipe.js"></script>
+</body>
+</html>

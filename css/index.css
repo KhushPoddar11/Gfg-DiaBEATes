@@ -312,6 +312,17 @@ color: #aece61;
 padding-right:10px;
 }
 
+i.fa-search{
+  color: whitesmoke;
+  font-size: 17px;
+}
+
+i.fa-times{
+  color: #337ab7;
+  font-size: 17px;
+  padding: 10px;
+}
+
 .footer {
 position: relative;
 background-color: #213368;
