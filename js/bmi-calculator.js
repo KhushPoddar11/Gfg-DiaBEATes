@@ -10,7 +10,7 @@ function computeBMI()
         var linkText = document.createTextNode("Diet plan");
         a.appendChild(linkText);
         a.title = "This means you are slightly underweight for your height. Diet plan";
-        a.href = "../Diet-plans/underweightDiet.html";
+        a.href = "../diet-plans/underweightDiet.html";
         document.body.appendChild(a);
 
         
@@ -48,7 +48,7 @@ function computeBMI()
         var linktext = document.createTextNode("Diet Plan");
         a.appendChild(linktext);
         a.title = "Diet plan";
-        a.href = "../Diet-plans/overweightDiet.html";
+        a.href = "../diet-plans/overweightDiet.html";
         document.body.appendChild(a);
         document.getElementById("comment").appendChild(a);
         }
@@ -59,7 +59,7 @@ function computeBMI()
         var linktext = document.createTextNode("Diet Plan");
         a.appendChild(linktext);
         a.title = "Diet plan";
-        a.href = "../Diet-plans/overweightDiet.html";
+        a.href = "../diet-plans/overweightDiet.html";
         document.body.appendChild(a);
         document.getElementById("comment").appendChild(a);
         }
@@ -70,7 +70,7 @@ function computeBMI()
         var linktext = document.createTextNode("Diet Plan");
         a.appendChild(linktext);
         a.title = "Diet plan";
-        a.href = "../Diet-plans/overweightDiet.html";
+        a.href = "../diet-plans/overweightDiet.html";
         document.body.appendChild(a);
         document.getElementById("comment").appendChild(a);
       
